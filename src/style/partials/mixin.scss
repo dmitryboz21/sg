@@ -25,3 +25,23 @@
     }
   }
 }
+
+$dh:982;
+$dw:1512;
+
+@function convertVertH($ttop) {
+	@return $ttop/982*100
+}
+
+@function convertHorizL($ttop) {
+	@return $ttop/1512*100
+}
+
+@function vw($px) {
+	@return $px/1512*100
+}
+
+@function vwmob($px) {
+	@return $px/390*100
+}
+

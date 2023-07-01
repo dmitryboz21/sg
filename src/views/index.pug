@@ -13,12 +13,18 @@ block main
 	.animated-bg
 		.animated-bg__inner
 			.animated-bg__art.animated-bg__art--1
-			img.animated-bg__art.animated-bg__art--2(src="img/anim/part_2.svg", alt="")
-			img.animated-bg__art.animated-bg__art--3(src="img/anim/part_3.svg", alt="")
-			img.animated-bg__art.animated-bg__art--4(src="img/anim/part_4.svg", alt="")
-			img.animated-bg__art.animated-bg__art--5(src="img/anim/part_5.svg", alt="")
-			img.animated-bg__art.animated-bg__art--6(src="img/anim/part_7_22.svg", alt="")
-			img.animated-bg__art.animated-bg__art--7(src="img/anim/part_6_20.svg", alt="")
+			img.animated-bg__art.animated-bg__art--2.animated-bg__art--desktop(src="img/anim/part_2.svg", alt="")
+			img.animated-bg__art.animated-bg__art--3.animated-bg__art--desktop(src="img/anim/part_3.svg", alt="")
+			img.animated-bg__art.animated-bg__art--4.animated-bg__art--desktop(src="img/anim/part_4.svg", alt="")
+			img.animated-bg__art.animated-bg__art--5.animated-bg__art--desktop(src="img/anim/part_5.svg", alt="")
+			img.animated-bg__art.animated-bg__art--6.animated-bg__art--desktop(src="img/anim/part_7_22.svg", alt="")
+			img.animated-bg__art.animated-bg__art--7.animated-bg__art--desktop(src="img/anim/part_6_20.svg", alt="")
+			img.animated-bg__art.animated-bg__art--2.animated-bg__art--mob(src="img/anim/part_2m.svg", alt="")
+			img.animated-bg__art.animated-bg__art--3.animated-bg__art--mob(src="img/anim/part_3m.svg", alt="")
+			img.animated-bg__art.animated-bg__art--4.animated-bg__art--mob(src="img/anim/part_4m.svg", alt="")
+			img.animated-bg__art.animated-bg__art--5.animated-bg__art--mob(src="img/anim/part_5m.svg", alt="")
+			img.animated-bg__art.animated-bg__art--6.animated-bg__art--mob(src="img/anim/part_7_22.svg", alt="")
+			img.animated-bg__art.animated-bg__art--7.animated-bg__art--mob(src="img/anim/part_6_20.svg", alt="")
 			.animated-bg__text-container
 				h1.animated-bg__text-1 Своевременные<br> решения
 				h2.animated-bg__text-2 Годовой отчет
@@ -30,6 +36,8 @@ block main
 				.sidebar__content
 					.sb-top
 						img.sb-top__logo(src="img/logo_sg.svg", alt="")
+						.sh-burger
+							span
 					.sb-main
 						.sb-main__inner.js-sidebar-scroll
 							.sb-main__inner-2
@@ -105,19 +113,19 @@ block main
 												li.sb-menu-list-item
 													a(href="").sb-menu-list-item__link Обращение Генерального директора
 								.sb-accordion.js-sb-accordion
-								.sb-accordion-top
-									.sb-accordion-title Корпоративное управление
-								.sb-accordion-main
-									.sb-accordion-main__inner
-										ul.sb-menu-list
-											li.sb-menu-list-item
-												a(href="").sb-menu-list-item__link Цифры и факты за 2022 год
-											li.sb-menu-list-item
-												a(href="").sb-menu-list-item__link Обращение Президента
-											li.sb-menu-list-item
-												a(href="").sb-menu-list-item__link Обращение Председателя Совета директоров
-											li.sb-menu-list-item
-												a(href="").sb-menu-list-item__link Обращение Генерального директора
+									.sb-accordion-top
+										.sb-accordion-title Корпоративное управление
+									.sb-accordion-main
+										.sb-accordion-main__inner
+											ul.sb-menu-list
+												li.sb-menu-list-item
+													a(href="").sb-menu-list-item__link Цифры и факты за 2022 год
+												li.sb-menu-list-item
+													a(href="").sb-menu-list-item__link Обращение Президента
+												li.sb-menu-list-item
+													a(href="").sb-menu-list-item__link Обращение Председателя Совета директоров
+												li.sb-menu-list-item
+													a(href="").sb-menu-list-item__link Обращение Генерального директора
 					.sb-bottom
 						.sb-bottom__info Годовой отчет 2022
 						a.sb-bottom__pdf(href="")
@@ -128,14 +136,14 @@ block main
 					.breadcrumbs-wrap
 						ul.breadcrumbs
 							li.breadcrumb
-								a.breadcrumb-link(href="") О компании
+								.breadcrumb-link О компании
 							li.breadcrumb
-								a.breadcrumb-link(href="#") Обращение Президента
+								.breadcrumb-link Обращение Президента
 					.main-block-flex
 						.main-block-flex__left
 							.left-content
 								.left-content-pic
-									img.left-content-pic__img(src="img/president.jpg", alt="")
+									img.left-content-pic__img.left-content-pic__img--mob-w143(src="img/president.jpg", alt="")
 									.left-content-pic__desc Президент ПАО «Селигдар»<br> Константин Александрович<br> БЕЙРИТ
 
 								.left-content-quote В 2022 году ПАО «Селигдар» удалось выполнить основные поставленные цели в рамках текущей стратегии развития и добиться приемлемых результатов. Несмотря на экономические сдвиги и ограничения, нами установлен новый рекорд по производству золота – более 7,5 т, на 6% больше уровня 2021 года.
