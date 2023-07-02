@@ -1,0 +1,536 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.breadcrumbs-wrap
+		ul.breadcrumbs
+			li.breadcrumb
+				.breadcrumb-link Стратегический отчет
+			li.breadcrumb
+				h1.breadcrumb-link Минерально-сырьевая база
+
+	.main-block-flex
+		//.main-block-flex__left
+			.left-content
+				.left-content-pic
+					img.left-content-pic__img.left-content-pic__img--mob-w143(src="img/president.jpg", alt="")
+					.left-content-pic__desc Президент ПАО «Селигдар»
+									p  Константин Александрович
+									p  БЕЙРИТ
+
+				.left-content-quote В 2022 году ПАО «Селигдар» удалось выполнить основные поставленные цели в рамках текущей стратегии развития и добиться приемлемых результатов. Несмотря на экономические сдвиги и ограничения, нами установлен новый рекорд по производству золота – более 7,5 т, на 6% больше уровня 2021 года.
+		.main-block-flex__right.main-block-flex__right--fw
+			.right-content
+				p
+					b  Минерально-сырьевая база
+				p
+					a(href="/otchyot.pdf" target="_blank") Полный обзор читайте в Годовом отчете на стр. 38-45
+
+
+
+				p
+					b Балансовые запасы золота категорий С1+С2 на 01.01.2023
+
+
+
+
+				.simple-table-wrap
+					table.simple-table.simple-table--only-horis-borders.simple-table--td-first-minw-200.simple-table--td-non-first-nowrap
+						tbody
+							tr.simple-table__blue-row
+								td
+									p
+										b Производственный комплекс
+								td
+									p
+										b Месторождение
+								td
+									p
+										b Руда, 
+									p
+										b тыс. т
+								td
+									p
+										b Среднее
+									p
+										b  содержание, г/т
+								td
+									p
+										b Золото, 
+									p
+										b кг
+							tr
+								td(colspan='2')
+									p Действующие активы
+								td  
+								td  
+								td  
+							tr
+								td
+									p Нижнеякокитский 
+								td
+									p Нижнеякокитское рудное поле
+								td
+									p 21 232
+								td
+									p 0,84
+								td
+									p 17 795
+							tr
+								td
+									p Подголечный
+								td
+									p Ясная Поляна
+								td
+									p 8 333
+								td
+									p 0,59
+								td
+									p 4 900
+							tr
+								td
+									p Рябиновый
+								td
+									p Рябиновое
+								td
+									p 5 675
+								td
+									p 1,13
+								td
+									p 6 438
+							tr
+								td
+									p Самолазовский
+								td
+									p Самолазовское
+								td
+									p 2 461
+								td
+									p 3,39
+								td
+									p 8 334
+							tr
+								td
+									p Лунный
+								td
+									p Лунное
+								td
+									p 3 093
+								td
+									p 1,86
+								td
+									p 5 758
+							tr
+								td
+									p Сининда
+								td
+									p Нерундинское
+								td
+									p 618
+								td
+									p 6,35
+								td
+									p 3 927
+							tr
+								td
+									p Поиск
+								td
+									p Мурзинское, Толстуха
+								td
+									p 749
+								td
+									p 1,86
+								td
+									p 1 394
+							tr
+								td(colspan='2')
+									p
+										b Перспективные проекты
+								td  
+								td  
+								td  
+							tr
+								td  
+								td
+									p Кючус
+								td
+									p 24 704
+								td
+									p 7,09
+								td
+									p 175 262
+							tr
+								td  
+								td
+									p Васин
+								td
+									p 6 477
+								td
+									p 6,84
+								td
+									p 44 306
+							tr
+								td(colspan='2')
+									p
+										b Всего рудное золото
+								td
+									p
+										b 73 342
+								td
+									p
+										b 3,66
+								td
+									p
+										b 268 113
+							tr.simple-table__blue-row
+								td  
+								td  
+								td
+									p
+										b Пески, тыс. м3
+								td
+									p
+										b Среднее содержание, г/м3
+								td
+									p
+										b Золото, кг
+							tr
+								td(colspan='2')
+									p
+										b Действующие активы
+								td  
+								td  
+								td  
+							tr
+								td
+									p Юрский
+								td
+									p Россыпи
+								td
+									p 8 449
+								td
+									p 0,42
+								td
+									p 3 544
+							tr
+								td(colspan='2')
+									p
+										b Всего россыпное золото
+								td
+									p
+										b 8 449
+								td
+									p
+										b 0,42
+								td
+									p
+										b 3 544
+							tr
+								td(colspan='2')
+									p
+										b Всего золото
+								td  
+								td  
+								td
+									p
+										b 271 657
+
+
+
+
+				p
+					i *  До 2022 года для данного комплекса использовалось название «Нирунган».
+
+				br
+				br
+
+				p
+					b Балансовые запасы олова, меди и триоксида вольфрама категорий В+С1+С2 на 01.01.2023
+
+
+				.simple-table-wrap
+					table.simple-table.simple-table--only-horis-borders.simple-table--td-first-minw-200.simple-table--td-non-first-nowrap
+						tbody
+							tr.simple-table__blue-row
+								td
+									p
+										b Производственный комплекс
+								td
+									p
+										b Месторождение
+								td
+									p
+										b Руда, тыс. т
+								td
+									p
+										b Среднее содержание, %
+								td
+									p
+										b Объем металла, тыс. т
+							tr.simple-table__blue-row
+								td(colspan='3')
+									p
+										b Олово
+								td  
+								td  
+							tr
+								td(colspan='2')
+									p
+										b Действующие активы
+								td  
+								td  
+								td  
+							tr
+								td
+									p Солнечный
+								td
+									p Фестивальное
+								td
+									p 5 751
+								td
+									p 0,71
+								td
+									p 41
+							tr
+								td
+									p Правоурмийский
+								td
+									p Правоурмийское
+								td
+									p 5 143
+								td
+									p 1,28
+								td
+									p 66
+							tr
+								td(colspan='3')
+									p
+										b Перспективные проекты
+								td  
+								td  
+							tr
+								td  
+								td
+									p Пыркакайские штокверки
+								td
+									p 96 375
+								td
+									p 0,25
+								td
+									p 243
+							tr
+								td  
+								td
+									p Перевальное
+								td
+									p 8 736
+								td
+									p 0,49
+								td
+									p 43
+							tr
+								td  
+								td
+									p Октябрьское
+								td
+									p 1 494
+								td
+									p 0,81
+								td
+									p 12
+							tr
+								td
+									p
+										b Всего
+								td  
+								td
+									p
+										b 117 499
+								td
+									p
+										b 0,35
+								td
+									p
+										b 405
+							tr.simple-table__blue-row
+								td(colspan='3')
+									p
+										b Медь
+								td  
+								td  
+
+
+				p
+					sup 1
+					|  До 2022 года для данного комплекса использовалось название «Нирунган».
+
+				br
+				br
+
+				.simple-table-wrap
+					table.simple-table.simple-table--only-horis-borders.simple-table--td-first-minw-200.simple-table--td-non-first-nowrap
+
+
+						tbody
+							tr
+								td(colspan='2')
+									p
+										b Действующие активы
+								td  
+								td  
+								td  
+							tr
+								td
+									p Солнечный
+								td
+									p Фестивальное
+								td
+									p 5 751
+								td
+									p 1,50
+								td
+									p 86
+							tr
+								td
+									p Правоурмийский
+								td
+									p Правоурмийское
+								td
+									p 5 143
+								td
+									p 0,62
+								td
+									p 32
+							tr
+								td(colspan='3')
+									p
+										b Перспективные проекты
+								td  
+								td  
+							tr
+								td  
+								td
+									p Перевальное
+								td
+									p 5 540
+								td
+									p 0,45
+								td
+									p 25
+							tr
+								td  
+								td
+									p Октябрьское
+								td
+									p 749
+								td
+									p 1,72
+								td
+									p 13
+							tr
+								td
+									p
+										b Всего
+								td  
+								td
+									p
+										b 17 183
+								td
+									p
+										b 0,91
+								td
+									p
+										b 156
+							tr.simple-table__blue-row
+								td(colspan='3')
+									p
+										b Триоксид вольфрама
+								td  
+								td  
+							tr
+								td(colspan='2')
+									p
+										b Действующие активы
+								td  
+								td  
+								td  
+							tr
+								td
+									p Солнечный
+								td
+									p Фестивальное
+								td
+									p 5 751
+								td
+									p 0,14
+								td
+									p 8
+							tr
+								td
+									p Правоурмийский
+								td
+									p Правоурмийское
+								td
+									p 5 143
+								td
+									p 0,05
+								td
+									p 3
+							tr
+								td(colspan='3')
+									p
+										b Перспективные проекты
+								td  
+								td  
+							tr
+								td  
+								td
+									p Пыркакайские штокверки
+								td
+									p 96 375
+								td
+									p 0,02
+								td
+									p 16
+							tr
+								td  
+								td
+									p Перевальное
+								td
+									p 5 511
+								td
+									p 0,03
+								td
+									p 2
+							tr
+								td  
+								td
+									p Октябрьское
+								td
+									p 749
+								td
+									p 0,08
+								td
+									p 1
+							tr
+								td
+									p
+										b Всего
+								td  
+								td
+									p
+										b 113 529
+								td
+									p
+										b 0,03
+								td
+									p
+										b 29

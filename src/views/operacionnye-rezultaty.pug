@@ -1,0 +1,319 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.breadcrumbs-wrap
+		ul.breadcrumbs
+			li.breadcrumb
+				.breadcrumb-link Стратегический отчет
+			li.breadcrumb
+				h1.breadcrumb-link Операционные результаты
+
+	.main-block-flex
+		//.main-block-flex__left
+			.left-content
+				.left-content-pic
+					img.left-content-pic__img.left-content-pic__img--mob-w143(src="img/president.jpg", alt="")
+					.left-content-pic__desc Президент ПАО «Селигдар»
+									p  Константин Александрович
+									p  БЕЙРИТ
+
+				.left-content-quote В 2022 году ПАО «Селигдар» удалось выполнить основные поставленные цели в рамках текущей стратегии развития и добиться приемлемых результатов. Несмотря на экономические сдвиги и ограничения, нами установлен новый рекорд по производству золота – более 7,5 т, на 6% больше уровня 2021 года.
+		.main-block-flex__right.main-block-flex__right--fw
+			.right-content
+				p
+					b  Операционные результаты
+				p
+					a(href="/otchyot.pdf" target="_blank") Полный обзор читайте в Годовом отчете на стр. 50-54
+
+
+				p
+					b Золотодобывающий дивизион
+
+
+				.simple-table-wrap
+					table.simple-table.simple-table--only-horis-borders.simple-table--td-first-minw-200.simple-table--td-non-first-nowrap
+						tbody
+							tr.simple-table__blue-row
+								td(colspan='2')
+									p
+										b Всего золотодобыча
+										| [1]
+								td
+									p  
+								td
+									p  
+								td
+									p  
+							tr
+								td
+									p Горная масса
+								td
+									p тыс. м3
+								td
+									p 29 058
+								td
+									p 26 826
+								td
+									p 28 835
+							tr
+								td
+									p Добыча руды
+								td
+									p тыс. т
+								td
+									p 11 241
+								td
+									p 16 656
+								td
+									p 14 173
+							tr
+								td
+									p Укладка руды
+								td
+									p тыс. т
+								td
+									p 7 066
+								td
+									p 6 863
+								td
+									p 6 854
+							tr
+								td
+									p Переработка руды по фабричной технологии
+								td
+									p тыс. т
+								td
+									p 1 616
+								td
+									p 1 495
+								td
+									p 1 596
+							tr
+								td
+									p Добыча и промывка песков
+								td
+									p тыс. м3
+								td
+									p 961
+								td
+									p 992
+								td
+									p 941
+							tr
+								td
+									p
+										b Производство лигатурного золота
+								td
+									p
+										b кг
+								td
+									p
+										b 7 015
+								td
+									p
+										b 7 127
+								td
+									p
+										b 7 555
+							tr
+								td
+									p
+										b Производство золота
+										b [2]
+								td
+									p
+										b кг
+								td
+									p
+										b 7 018
+								td
+									p
+										b 7 218
+								td
+									p
+										b 7 563
+							tr
+								td
+									p в т.ч. по договорам подряда
+								td
+									p кг
+								td
+									p 937
+								td
+									p 528
+								td
+									p 348
+							tr
+								td
+									p Реализация золота
+								td
+									p кг
+								td
+									p 7 317
+								td
+									p 7 047
+								td
+									p 7 587
+							tr
+								td
+									p Реализация золота, учитываемая в<br> консолидированной выручке по МСФО
+								td
+									p кг
+								td
+									p 6 340
+								td
+									p 6 520
+								td
+									p 7 239
+
+				br
+				br
+
+				p
+					b Оловодобывающий дивизион
+
+				.simple-table-wrap
+					table.simple-table.simple-table--only-horis-borders.simple-table--td-first-minw-200.simple-table--td-non-first-nowrap
+						tbody
+							tr.simple-table__blue-row
+								td
+									p
+										b Всего оловодобыча
+										| [3]
+								td
+									p  
+								td
+									p  
+								td
+									p  
+								td
+									p  
+							tr
+								td
+									p Добыча руды
+								td
+									p тыс. т
+								td
+									p 499
+								td
+									p 585
+								td
+									p 671
+							tr
+								td
+									p Переработка руды
+								td
+									p тыс. т
+								td
+									p 506
+								td
+									p 544
+								td
+									p 588
+							tr
+								td
+									p Производство олова в концентрате
+								td
+									p т
+								td
+									p 2 539
+								td
+									p 2 908
+								td
+									p 2 901
+							tr
+								td
+									p Производство меди в концентрате
+								td
+									p т
+								td
+									p 236
+								td
+									p 366
+								td
+									p 916
+							tr
+								td
+									p Производство вольфрама в концентрате
+								td
+									p т
+								td
+									p 72
+								td
+									p 47
+								td
+									p 81
+
+				br
+				br
+				p
+					b Холдинг
+
+
+				.simple-table-wrap
+					table.simple-table.simple-table--only-horis-borders.simple-table--td-first-minw-200.simple-table--td-non-first-nowrap
+						tbody
+							tr.simple-table__blue-row
+								td
+									p
+										b  
+								td
+									p
+										b Ед. изм.
+								td
+									p
+										b 2020
+								td
+									p
+										b 2021
+								td
+									p
+										b 2022
+							tr
+								td
+									p
+										b Производство в золотом эквиваленте
+										b [4]
+								td
+									p кг
+								td
+									p 7 741
+								td
+									p 8 784
+								td
+									p 9 294
+							tr
+								td
+									p в т.ч. по договорам подряда
+								td
+									p кг
+								td
+									p 950
+								td
+									p 550
+								td
+									p 370
+
+				hr
+
+				p
+					sup [1]
+					|  Незначительные расхождения суммы показателей по отдельным производственным комплексам и суммарных показателей связаны с округлением
+				p
+					sup [2]
+					|  Включает золото с угля и разницы опробования
+				p
+					sup [3]
+					|  Незначительные расхождения суммы показателей по отдельным производственным комплексам и суммарных показателей связаны с округлением
+				p
+					sup [4]
+					|  Производство в пересчете на золотой эквивалент включает производство оловянного, вольфрамового и медного концентратов и серебра. Производство концентратов в золотом эквиваленте рассчитано исходя из товарного выпуска концентратов (в рублях) и средней цены реализации золота в соответствующем отчетном периоде: в 2020 году - 4262 руб./г, в 2021 году - 4231 руб./г, в 2022 году - 3687 руб./г. Коэффициент пересчета золото/серебро в 2020 году - 86:1, в 2021 году - 73:1, в 2022 году - 88:1.

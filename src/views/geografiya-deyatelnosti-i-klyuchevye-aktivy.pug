@@ -1,0 +1,59 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.breadcrumbs-wrap
+		ul.breadcrumbs
+			li.breadcrumb
+				.breadcrumb-link О компании
+			li.breadcrumb
+				h1.breadcrumb-link География деятельности и ключевые активы
+
+	.main-block-flex
+		//.main-block-flex__left
+			.left-content
+				.left-content-pic
+					img.left-content-pic__img.left-content-pic__img--mob-w143(src="img/president.jpg", alt="")
+					.left-content-pic__desc Президент ПАО «Селигдар»<br> Константин Александрович<br> БЕЙРИТ
+
+				.left-content-quote В 2022 году ПАО «Селигдар» удалось выполнить основные поставленные цели в рамках текущей стратегии развития и добиться приемлемых результатов. Несмотря на экономические сдвиги и ограничения, нами установлен новый рекорд по производству золота – более 7,5 т, на 6% больше уровня 2021 года.
+		.main-block-flex__right.main-block-flex__right--fw
+			.right-content
+				p
+					b  География деятельности и ключевые активы
+
+
+
+
+
+
+
+
+				.geog-map
+					img(src="img/geografiya-deyatelnosti.jpg", alt="")
+					| <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3021" height="2055" viewBox="0 0 3021 2055" fill="rgba(255, 255, 255, 0.001)">
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#stroitelstvo-zif-na-mestorozhdenii-hvojnoe" x="1852.51" y="744.945" width="139.462" height="83.8147" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#proizvodstvennyj-kompleks-pravourmijskij" x="2702.21" y="744.945" width="279.565" height="224.131" fill="rgba(255, 255, 255, 0.001)"/>
+					// <rect class="js-geog-map-point" data-href="" x="2702.21" y="1208.49" width="279.565" height="239.983" fill="rgba(255, 255, 255, 0.001)"/>
+					// <rect class="js-geog-map-point" data-href="" x="2702.21" y="1495.61" width="279.565" height="211.271" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#proizvodstvennyj-kompleks-samolazovskij" x="2702.21" y="1754.02" width="279.565" height="226.551" fill="rgba(255, 255, 255, 0.001)"/>
+					// <rect class="js-geog-map-point" data-href="" x="2274.47" y="1585.93" width="279.565" height="226.551" fill="rgba(255, 255, 255, 0.001)"/>
+					// <rect class="js-geog-map-point" data-href="" x="1808.32" y="1601.25" width="279.565" height="237.171" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#proizvodstvennyj-kompleks-ryabinovyj" x="1808.32" y="1309.26" width="279.565" height="223.084" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#proizvodstvennyj-kompleks-sininda" x="992.363" y="1472.63" width="217.099" height="217.099" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#proizvodstvennyj-kompleks-poisk" x="1061.68" y="234.022" width="217.099" height="244.364" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#proizvodstvennyj-kompleks-solnechnyj" x="2702.21" y="212.348" width="279.565" height="224.131" fill="rgba(255, 255, 255, 0.001)"/>
+					// <rect class="js-geog-map-point" data-href="" x="2005.37" y="685.863" width="139.806" height="142.897" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#osvoenie-mestorozhdeniya-kyuchus" x="1889.61" y="394.572" width="204.728" height="83.8147" fill="rgba(255, 255, 255, 0.001)"/>
+					| <rect class="js-geog-map-point" data-href="/proekty-razvitiya.html#strategicheskij-proekt-pyrkakajskie-shtokverki" x="2231.31" y="126.639" width="212.765" height="125.208" fill="rgba(255, 255, 255, 0.001)"/>
+					| </svg>
+
+
