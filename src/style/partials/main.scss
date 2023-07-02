@@ -944,7 +944,7 @@ $minmob:1301px;
 	}
 
 	&--active {
-		@media screen and (min-width:$minanimBP) {
+		@media screen and (min-width:$minmob) {
 
 			opacity: 1;
 			top: 0;

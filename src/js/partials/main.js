@@ -57,7 +57,7 @@ $(document).ready(function () {
 	//$('body').on('click',function(){
 	//  });
 
-/*
+
 	setTimeout(() => {
 		$('.animated-bg__art').addClass('animated-bg__art--activated');
 		$('.animated-bg__text-container').addClass('animated-bg__text-container--activated');
@@ -72,8 +72,8 @@ $(document).ready(function () {
 			}, 400);
 		}, 1400);
 	}, 600);
-*/
 
+/*
 	$('.animated-bg__art').addClass('animated-bg__art--activated');
 	$('.animated-bg__text-container').addClass('animated-bg__text-container--activated');
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
 	$('.sidebar').addClass('sidebar--active');
 
 	$('.main-block').addClass('main-block--active');
-
+*/
 
 
 	setAspectRatioClass();
