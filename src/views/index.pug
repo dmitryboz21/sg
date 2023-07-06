@@ -15,7 +15,7 @@ block main
 			li.breadcrumb
 				.breadcrumb-link Цифры и факты
 			li.breadcrumb
-				h1.breadcrumb-link Результаты за 2022 год
+				.breadcrumb-link Результаты за 2022 год
 
 	.main-block-flex
 		//.main-block-flex__left
@@ -27,8 +27,11 @@ block main
 				.left-content-quote В 2022 году ПАО «Селигдар» удалось выполнить основные поставленные цели в рамках текущей стратегии развития и добиться приемлемых результатов. Несмотря на экономические сдвиги и ограничения, нами установлен новый рекорд по производству золота – более 7,5 т, на 6% больше уровня 2021 года.
 		.main-block-flex__right.main-block-flex__right--fw
 			.right-content
-				p
-					b  Результаты за 2022 год
+
+				.page-top-pic
+					img(src="img/results.jpg", alt="")
+
+				h1  Результаты за 2022 год
 
 				p В 2022 году предприятия золотодобывающего дивизиона Холдинга «Селигдар» произвели 7,55 т лигатурного золота, предприятия оловодобывающего дивизиона - 2,9 тыс. т олова, 81 т вольфрама и 916 т меди в концентрате.
 				p Холдинг обладает значительной ресурсной базой. На 1 января 2023 года балансовые запасы составили 272 т золота и 405 тыс. т олова.
@@ -36,17 +39,54 @@ block main
 				p Консолидированная выручка ПАО «Селигдар» за 2022 год составила 35 млрд руб. Величина активов компании на 31 декабря 2022 года составила 136 млрд руб.
 				p Численность персонала составляет 3,9 тыс. человек.
 
-				p.big-text Выручка 2022
+
+				.digits-blocks
+					.digits-block
+						.digits-block__title Выручка 2022
+						.digits-block__parts
+							.digits-block-part
+								.digits-block-part__val 35
+								.digits-block-part__dimension млрд руб.
+
+					.digits-block.digits-block--2-of-3.digits-block--grey
+						.digits-block__title Запасы
+						.digits-block__parts
+							.digits-block-part
+								.digits-block-part__val 272
+								.digits-block-part__dimension т золота
+							.digits-block-part
+								.digits-block-part__val 405
+								.digits-block-part__dimension  тыс. т олова
+
+					.digits-block.digits-block--2-of-3
+						.digits-block__title Производство 2022
+						.digits-block__parts
+							.digits-block-part
+								.digits-block-part__val 7,55
+								.digits-block-part__dimension т золота
+							.digits-block-part
+								.digits-block-part__val 2,9
+								.digits-block-part__dimension тыс. т олова в концентрате
+
+					.digits-block
+						.digits-block__title Активы на 31.12.2022
+						.digits-block__parts
+							.digits-block-part
+								.digits-block-part__val 36
+								.digits-block-part__dimension млрд руб.
+
+
+				//p.big-text Выручка 2022
 					| <br>
 					b 35 млрд руб.
 
-				p Запасы
-					| <br> 272 т золота
-					| <br> 405 тыс. т олова
-				p
-				p Производство 2022
-					| <br> 7,55 т золота
-					| <br> 2,9 тыс. т олова в концентрате
-				p
-				p Активы на 31.12.2022
-					| <br> 136 млрд руб.
+					p Запасы
+						| <br> 272 т золота
+						| <br> 405 тыс. т олова
+					p
+					p Производство 2022
+						| <br> 7,55 т золота
+						| <br> 2,9 тыс. т олова в концентрате
+					p
+					p Активы на 31.12.2022
+						| <br> 136 млрд руб.

@@ -73,16 +73,16 @@ $(document).ready(function () {
 		}, 1400);
 	}, 600);
 
-/*
-	$('.animated-bg__art').addClass('animated-bg__art--activated');
+
+	/*$('.animated-bg__art').addClass('animated-bg__art--activated');
 	$('.animated-bg__text-container').addClass('animated-bg__text-container--activated');
 
 	$('.main-content').addClass('main-content--active');
 
 	$('.sidebar').addClass('sidebar--active');
 
-	$('.main-block').addClass('main-block--active');
-*/
+	$('.main-block').addClass('main-block--active');*/
+
 
 
 	setAspectRatioClass();
