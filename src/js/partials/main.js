@@ -3,6 +3,10 @@ function setAspectRatioClass() {
 	var innerH = window.innerHeight;
 	var ratio = innerH / innerW * 100;
 
+	if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
+		$('body').addClass('body--is-safari')
+	 }
+
 	$('body').removeClass(['body-ratio-type--1', 'body-ratio-type--2', 'body-ratio-type--3', 'body-ratio-type--mob-1',
 		'body-ratio-type--mob-2',
 		'body-ratio-type--mob-3',

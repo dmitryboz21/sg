@@ -1951,3 +1951,17 @@ a.next-page-btn {
 	}
 
 }
+
+
+.body--is-safari{
+	.digits-block-part__dimension { 
+		margin-bottom: 17px;
+		@media screen and (max-width:780px) { 
+			margin-bottom: 26px;
+		}
+		@media screen and (max-width: 355px)
+		{
+			margin-bottom: 20px;
+		}
+	}
+}
