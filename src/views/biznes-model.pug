@@ -10,7 +10,7 @@ block vars
 
 
 block main
-	.breadcrumbs-wrap
+	.breadcrumbs-wrap.breadcrumbs-wrap--page-with-sb
 		ul.breadcrumbs
 			li.breadcrumb
 				.breadcrumb-link О компании
@@ -26,14 +26,19 @@ block main
 
 				.left-content-quote В 2022 году ПАО «Селигдар» удалось выполнить основные поставленные цели в рамках текущей стратегии развития и добиться приемлемых результатов. Несмотря на экономические сдвиги и ограничения, нами установлен новый рекорд по производству золота – более 7,5 т, на 6% больше уровня 2021 года.
 		.main-block-flex__right.main-block-flex__right--fw
-			.right-content
+			.right-content.right-content--with-sidebar
 				//.page-top-pic
 					img(src="img/strategiya-ustojchivogo-razvitiya.jpg", alt="")
 
 				h1  Бизнес-модель
 
 				.simple-pic
-					img(src="img/biznes-model.jpg", alt="")
+					picture 
+						source(srcset="img/new-pics/biznes-model-mobile.jpg" media="(max-width: 1000px)")
+						img(src="img/new-pics/biznes-model-desktop.jpg", alt="")
 
 
 
+
+				.next-page-btn-wrap
+					a.next-page-btn.js-change-page(href="/strategiya-ustojchivogo-razvitiya.html")   Стратегия устойчивого развития

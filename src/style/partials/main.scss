@@ -592,6 +592,15 @@ $minmob:1301px;
 	flex-shrink: 0;
 	pointer-events: all;
 
+	@media screen and (min-width:$minmob) {
+		min-height: 100px;
+		padding-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		margin-bottom: calc(-42.8vh + (88px + 102px + 105px));
+	}
 	@media screen and (max-width:$mob) {
 		padding: 0;
 		height: 53px;
@@ -704,7 +713,8 @@ $minmob:1301px;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
-	padding-top: calc(42.8vh - 88px - 102px - 53px);
+	//padding-top: calc(42.8vh - 88px - 102px - 53px);
+	padding-top: calc(42.8vh - 88px - 102px - 105px);
 	justify-content: flex-start;
 
 
@@ -890,7 +900,8 @@ $minmob:1301px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	padding-top: 20px;
+	//padding-top: 20px;
+	padding-top: 72px;
 	flex-shrink: 0;
 
 
@@ -996,7 +1007,11 @@ $minmob:1301px;
 		.simplebar-scrollbar {
 			&:before {
 				left: 0;
+				opacity: 1 !important;
 				background: #FAFAFA;
+				border-radius: 0;
+				//background: #ffffff;
+				cursor: pointer;
 
 			}
 		}
@@ -1229,8 +1244,11 @@ $minmob:1301px;
 
 	&--with-sidebar {
 		width: 100%;
-	}
 
+		@media screen and (max-width: 1300px) {
+			margin-top: 30px;
+		}
+	}
 
 	h1,
 	h2,
@@ -1847,4 +1865,89 @@ $minmob:1301px;
 		object-fit: cover;
 		object-position: center center;
 	}
+}
+
+
+.next-page-btn-wrap {
+	margin-top: 59px;
+}
+
+.next-page-btn,
+a.next-page-btn {
+	display: block;
+	width: 100%;
+	background: #EBDBBE;
+	padding: 56px 20px 65px;
+	margin-bottom: 66px;
+	text-align: center;
+
+	color: #FFF;
+	text-align: center;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.3;
+	text-decoration: none;
+	position: relative;
+
+	transition: all .3s;
+	@media screen and (max-width:$mob) {
+		padding-left: 70px;
+		padding-right: 70px;
+		
+	}
+	@media screen and (max-width:390px) {
+		padding-left: 25px;
+		padding-right: 25px;
+		
+	}
+	&::before {
+		content: 'Следующий раздел';
+		font-family: 'Ristretto Slab Pro', sans-serif;
+		font-size: 35px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 62px;
+		color: #C39455;
+		text-align: center;
+		display: block;
+		padding-bottom: 9px;
+		transition: all .3s;
+		line-height: 1;
+		@media screen and (max-width:$mob) {
+			
+		}
+		@media screen and (max-width:360px) {
+			font-size: 30px;
+			line-height: 1;
+			
+		}
+
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		width: 33px;
+		height: 33px;
+		background: url('../img/arrow-btn.svg') no-repeat;
+		background-position: right top;
+		background-size: cover;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+	}
+
+
+	&:hover{
+		background: #F3E8D4;
+		
+		color: #464646;
+		&::before {
+			color: #DDBC8F;
+		}
+
+	}
+
 }

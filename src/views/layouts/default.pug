@@ -13,7 +13,28 @@ html(lang="ru")
 		meta.sb-menu-list-item__link.js-change-page(name="format-detection" content="telephone=no")
 		link(href="css/main.css" rel="stylesheet")
 
-		//title= `${page.title}`
+
+		| <title>Селигдар | Годовой отчет 2022</title>
+		| <meta name="description" content="Годовой отчет 2022">
+		| <meta property="og:type" content="website">
+		| <meta property="og:locale" content="ru_RU">
+		| <meta property="og:title" content="Селигдар | Годовой отчет 2022">
+		| <meta property="og:description" content="Годовой отчет 2022">
+		| <meta property="og:image" content="Share_seligdar.jpg">
+		| <meta name="twitter:card" content="summary_large_image">
+		| <meta name="twitter:title" content="Селигдар | Годовой отчет 20222">
+		| <meta name="twitter:description" content="Годовой отчет 2022">
+		| <meta name="twitter:image" content="Share_seligdar.jpg">
+		| <link rel="icon" href="/favicon.ico" type="/img/favicon/x-icon" />
+		| <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		| <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+		| <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+		| <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png"/>
+		| <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/logo-sign-57.png"/>
+		| <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/logo-sign-72.png"/>
+		| <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/logo-sign-114.png"/>
+		| <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/logo-sign-144.png"/>
+ 
 
 	body
 		block header
@@ -43,7 +64,7 @@ html(lang="ru")
 				.main-content__flex
 					.sidebar
 						.sidebar__content
-							.sb-top
+							a.sb-top.js-change-page(href="/index.html") 
 								img.sb-top__logo(src="img/logo_sg.svg", alt="")
 								.sh-burger
 									span
