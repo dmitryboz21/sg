@@ -78,14 +78,17 @@ $(document).ready(function () {
 	}, 600);
 
 
-	/*$('.animated-bg__art').addClass('animated-bg__art--activated');
-	$('.animated-bg__text-container').addClass('animated-bg__text-container--activated');
+	//бычтрое отображение для дебага 
+	if(document.location.href.includes('localhost')){
+		$('.animated-bg__art').addClass('animated-bg__art--activated');
+		$('.animated-bg__text-container').addClass('animated-bg__text-container--activated');
 
-	$('.main-content').addClass('main-content--active');
+		$('.main-content').addClass('main-content--active');
 
-	$('.sidebar').addClass('sidebar--active');
+		$('.sidebar').addClass('sidebar--active');
 
-	$('.main-block').addClass('main-block--active');*/
+		$('.main-block').addClass('main-block--active');
+	}
 
 
 
@@ -152,14 +155,16 @@ $(document).ready(function () {
 	});
 
 
-	$('body').on('click', '.js-change-page', function (e) {
-		e.preventDefault();
-		e.stopPropagation();
+	if(!document.location.href.includes('localhost')){
+		$('body').on('click', '.js-change-page', function (e) {
+			e.preventDefault();
+			e.stopPropagation();
 
-		var url = $(this).attr('href');
-		console.log(url);
-		loadPage(url, function () { });
-	});
+			var url = $(this).attr('href');
+			console.log(url);
+			loadPage(url, function () { });
+		});
+	}
 
 	function loadPage(url, callbackF) {
 		var prefix_for_links = '';

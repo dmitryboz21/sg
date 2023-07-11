@@ -1428,6 +1428,23 @@ $minmob:1301px;
 	img {
 		width: auto;
 	}
+	&--limited-chart{
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			max-height: 372px;
+			object-fit: contain;
+			object-position: center center;
+		}
+		&--h500{
+			img{
+				max-height: 500px;
+			}
+			
+			
+		}
+
+	}
 }
 
 
