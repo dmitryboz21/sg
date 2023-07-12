@@ -135,7 +135,10 @@ $(document).ready(function () {
 	});
 
 
-	$('.sh-burger').on('click', function () {
+	$('.sh-burger').on('click', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+
 		$(this).toggleClass('sh-burger--active');
 		$('.sidebar').toggleClass('sidebar--mob-opened');
 	});
