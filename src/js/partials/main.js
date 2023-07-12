@@ -169,9 +169,9 @@ $(document).ready(function () {
 	function loadPage(url, callbackF) {
 		var prefix_for_links = '';
 
-		if (document.location.href.indexOf('github.io') !== -1) {
+		/*if (document.location.href.indexOf('github.io') !== -1) {
 			prefix_for_links = '/sg/build';
-		}
+		}*/
 
 
 		$.ajax({
