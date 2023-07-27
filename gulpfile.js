@@ -14,6 +14,8 @@ var gulp = require('gulp'),
 	reload = browserSync.reload,
 	pug = require('gulp-pug');
 
+	var cache = require('gulp-cached');
+
 
 
 var path = {
@@ -63,6 +65,17 @@ gulp.task('html:build', function () {
 });
 */
 gulp.task('html:build', function buildHTML() {
+	return gulp.src('src/views/*.pug')
+		.pipe(cache('puging'))
+		.pipe(pug({
+		// Your options in here.
+		pretty: true
+		}))
+		.pipe(gulp.dest(path.build.html))
+		.pipe(reload({stream: true}));
+  });
+
+gulp.task('html:prod', function buildHTML() {
 	return gulp.src('src/views/*.pug')
 		.pipe(pug({
 		// Your options in here.
@@ -129,6 +142,8 @@ gulp.task('fonts:build', function() {
 
 
 gulp.task('build', gulp.parallel('html:build', 'js:build', 'style:build', 'fonts:build', 'images:build', 'img:build'));
+
+gulp.task('prod', gulp.parallel('html:prod', 'js:build', 'style:build', 'fonts:build'));
 
 gulp.task('watch', function(){
 	gulp.watch([path.watch.html], gulp.series("html:build"));
